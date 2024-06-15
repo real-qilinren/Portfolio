@@ -48,7 +48,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                         {/* Close Icon */}
                         <div className="flex justify-end p-12">
                             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                                <img alt="close-icon" src={require('../assets/close-icon.svg')}/>
+                                <img alt="close-icon" src={require('../assets/close-icon.svg').default}/>
                             </button>
                         </div>
 
