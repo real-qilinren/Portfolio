@@ -10,7 +10,7 @@ const Footer = () => {
                         QILIN REN
                     </p>
                     <p className="font-playfair text-md text-yellow">
-                        ©2024 REN. All Rights Reserved.
+                        ©2024 REN. All Rights Reserved. v1.0
                     </p>
                 </div>
             </div>

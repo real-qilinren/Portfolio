@@ -51,16 +51,16 @@ const Contact = () => {
                         hidden: {opacity: 0, y: 50},
                         visible: {opacity: 1, y: 0},
                     }}
-                    className="basis-1/2 flex justify-center` p-10 mt-10 md:mt-0"
+                    className="basis-1/2 flex justify-center p-10 mt-10 md:mt-0"
                 >
                     <div className="text-white text-center md:text-left">
                         <p className="font-playfair text-xl">
                             <span className="text-yellow font-semibold">GitHub:</span> <a
-                            href="https://github.com/XXXXXX" className="text-blue-500">https://github.com/real-qilinren</a>
+                            href="https://github.com/real-qilinren" className="text-blue-500">@real-qilinren</a>
                         </p>
                         <p className="font-playfair text-xl mt-3">
                             <span className="text-yellow font-semibold">LinkedIn:</span> <a
-                            href="https://linkedin.com/in/XXXXXX" className="text-blue-500">www.linkedin.com/in/real-qilin-ren</a>
+                            href="www.linkedin.com/in/real-qilin-ren" className="text-blue-500">@real-qilin-ren</a>
                         </p>
                         <p className="font-playfair text-xl mt-3">
                             <span className="text-yellow font-semibold">Email:</span> <a href="mailto:qilin.ren@outlook.com"

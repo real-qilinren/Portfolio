@@ -27,7 +27,9 @@ const MySkills = () => {
 
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7">
-                        Test Test Test
+                        Throughout my university studies and work experiences, I have acquired key programming skills and had the opportunity
+                        to collaborate on numerous projects with individuals from diverse backgrounds.
+                        Additionally, I have honed essential soft skills such as teamwork, time management, and multitasking.
                     </p>
                 </motion.div>
 
@@ -53,7 +55,7 @@ const MySkills = () => {
 
             {/* Skills Section */}
             <div className="md:flex md:justify-between mt-16 gap-32">
-                {/* Experience */}
+                {/* Tech Skills */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
@@ -68,17 +70,25 @@ const MySkills = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">01</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Experience</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Tech Skills</p>
                         </div>
 
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]"/>
                     </div>
                     <p className="mt-5">
-                    Experience ...............
+                        - Java/Python/C/JavaScript/HTML/CSS/SQL/R/Swift <br/>
+                        - React/Node.js/Express/SpringBoot <br/>
+                        - Agile/XP/Waterfall methodology<br/>
+                        - Git/Jira/GitHub/Bitbucket<br/>
+                        - Docker/Jenkins<br/>
+                        - MySQL/SQLite/FireStore/MongoDB<br/>
+                        - Data Structures/Algorithms<br/>
+                        - Design Patterns/Principles<br/>
+                        - Understanding of ML/DL <br/>
                     </p>
                 </motion.div>
 
-                {/* Tech Skills */}
+                {/* Soft Skills */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
@@ -93,17 +103,19 @@ const MySkills = () => {
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">02</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Tech Skills</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Soft Skills</p>
                         </div>
 
                         <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]"/>
                     </div>
                     <p className="mt-5">
-                        Tech Skills ...............
+                        - Teamwork/Collaboration/Strong relationship building <br/>
+                        - Strong self-management skills<br/>
+                        - Strong readability and problem-solving skills<br/>
                     </p>
                 </motion.div>
 
-                {/* Soft Skills */}
+                {/* Experience */}
                 <motion.div
                     className="md:w-1/3 mt-10"
                     initial="hidden"
@@ -124,7 +136,8 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]"/>
                     </div>
                     <p className="mt-5">
-                        Soft Skills ...............
+                        - Frontend Developer Intern <br/>
+                        - Freelance Housing consultant
                     </p>
                 </motion.div>
             </div>
