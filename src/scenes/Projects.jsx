@@ -15,27 +15,56 @@ const projectVariant = {
     visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, subtitle}) => {
-    const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+const Project = ({ title, subtitle, githubLink, demoLink }) => {
     const projectTitle = title.split(" ").join("-").toLowerCase();
 
     return (
-        <motion.div variants={projectVariant} className="relative">
-            <div className={overlayStyles}>
-                <p className="text-2xl font-playfair">{title}</p>
-                <p className="mt-7">
-                    {subtitle}
-                </p>
+        <motion.div variants={projectVariant} className="flex flex-col md:flex-row w-full mb-10">
+            <div className="w-full md:w-2/3">
+                <img
+                    src={require(`../assets/${projectTitle}.png`)}
+                    alt={projectTitle}
+                    className="object-cover w-full h-full rounded-lg"
+                    style={{ aspectRatio: '16/9' }}
+                />
             </div>
-            <img src={require(`../assets/${projectTitle}.png`)} alt={projectTitle} />
+            <div className="flex flex-col justify-center items-start p-8 w-full md:w-1/3 bg-gray-800 text-white rounded-b-lg md:rounded-l-none md:rounded-r-lg">
+                <p className="text-2xl font-playfair mb-4">{title}</p>
+                <p className="text-gray-300 mb-4">{subtitle}</p>
+                <div className="flex space-x-4">
+                    {githubLink && (
+                        <a
+                            className="hover:opacity-50 transition duration-500"
+                            href={githubLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <img
+                                src={require('../assets/github.png')}
+                                alt="github"
+                                style={{maxWidth: '30px', maxHeight: '30px'}}
+                            />
+                        </a>
+                    )}
+                    {demoLink && (
+                        <a
+                            className="hover:opacity-50 transition duration-500"
+                            href={demoLink}
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Demo
+                        </a>
+                    )}
+                </div>
+            </div>
         </motion.div>
     );
 };
 
 const Projects = () => {
     return (
-        <section id="projects" className="pt-48 pb-48">
+        <section id="projects" className="pt-24 pb-24">
             {/* HEADINGS */}
             <motion.div
                 className="md:w-2/5 mx-auto text-center"
@@ -63,49 +92,40 @@ const Projects = () => {
             </motion.div>
 
             {/* PROJECTS */}
-            <div className="flex justify-center">
+            <div className="block">
                 <motion.div
-                    className="sm:grid sm:grid-cols-3"
+                    className="flex flex-col"
                     variants={container}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
                 >
-                    {/* ROW 1 */}
-                    <div
-                        className="flex justify-center text-center items-center p-10 bg-red
-                            max-w-[591px] max-h-[591px] text-2xl font-playfair font-semibold"
-                    >
-                        Website Development
-                    </div>
-                    <Project title="Project 1" subtitle="ProjectX - A MERN Stack reponsive website with Dark/Light mode,
-                    and the features that allowing users to have real-time chat (Socket.IO),
-                    public posts with auto-generation of post description (Google Vision API)."/>
-                    <Project title="Project 2" subtitle="CineChat - A movie website (SpringBoot + SQLite + React)
-                    which allowing users to get personzlized movie recommendations by chatting (ChatGPT API)
-                    and movie information from TMDB API.
-                    The website also has the feature such as auto-generating blog tags based on the blog content by using ChatGPT API."/>
-
-                    {/* ROW 2 */}
-                    <Project title="Project 3" subtitle="SmartFit - A fitness plan website (SpringBoot + MySQL + React) allows users
-                    to get personalized fitness plan based on their preferences by using ChatGPT API,
-                    sharing their thoughts of the fitness plans, and tracking their fitness progress."/>
-                    <Project title="Project 4" subtitle="An iOS app (SwiftUI + Firebase/FireStore) that allows parents
-                    to assign chores for their children and give their children rewards based on their progress."/>
-                    <Project title="Project 5" subtitle="A simple ballboy game by using JavaFx and Model-View seperation.
-                    The highlights of this project is the use of design patterns such as Factory, Strategy, Facade, etc.
-                    and the practice of design principles such as High-cohesion and low coupling."/>
-
-                    {/* ROW 3 */}
-                    <Project title="Project 6" subtitle="MeetUp - An Android app (Java + Firebase/Firestore) that
-                    allowing users to create/join events, also to have realtime chat with other users by using FireStore. "/>
-                    <Project title="Project 7" subtitle="USE FOR SPACE OCCUPATION ONLY"/>
-                    <div
-                        className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[591px] max-h-[591px] text-2xl font-playfair font-semibold"
-                    >
-                        Mobile Development
-                    </div>
+                    {/* Projects */}
+                    <Project
+                        title="LifeScribe"
+                        subtitle="A MERN Stack responsive website with Dark/Light mode, and the features that allowing users to have real-time chat (Socket.IO), public posts with auto-generation of post description (Google Vision API)."
+                        githubLink="https://github.com/real-qilinren/LifeScribe"
+                    />
+                    <Project
+                        title="CineChat"
+                        subtitle="A movie website (SpringBoot + SQLite + React) which allowing users to get personalized movie recommendations by chatting (ChatGPT API) and movie information from TMDB API. The website also has the feature such as auto-generating blog tags based on the blog content by using ChatGPT API."
+                    />
+                    <Project
+                        title="SmartFit"
+                        subtitle="A fitness plan website (SpringBoot + MySQL + React) allows users to get personalized fitness plan based on their preferences by using ChatGPT API, sharing their thoughts of the fitness plans, and tracking their fitness progress."
+                    />
+                    <Project
+                        title="OnTaskAchiever"
+                        subtitle="An iOS app (SwiftUI + Firebase/FireStore) that allows parents to assign chores for their children and give their children rewards based on their progress."
+                    />
+                    <Project
+                        title="BallBoy"
+                        subtitle="A simple ballboy game by using JavaFx and Model-View separation. The highlights of this project is the use of design patterns such as Factory, Strategy, Facade, etc. and the practice of design principles such as High-cohesion and low coupling."
+                    />
+                    <Project
+                        title="MeetUp"
+                        subtitle="An Android app (Java + Firebase/Firestore) that allowing users to create/join events, also to have realtime chat with other users by using FireStore."
+                    />
                 </motion.div>
             </div>
         </section>

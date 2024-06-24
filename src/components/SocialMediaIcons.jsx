@@ -12,25 +12,17 @@ const SocialMediaIcons = () => {
                 <img alt="linkedin-link" src={require('../assets/linkedin.png')}/>
             </a>
 
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a
                 className="hover:opacity-50 transition duration-500"
+                href="https://github.com/real-qilinren"
+                target="_blank"
+                rel="noreferrer"
             >
-                <img alt="facebook-link" src={require('../assets/facebook.png')}/>
-            </a>
-
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a
-                className="hover:opacity-50 transition duration-500"
-            >
-                <img alt="ins-link" src={require('../assets/instagram.png')}/>
-            </a>
-
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a
-                className="hover:opacity-50 transition duration-500"
-            >
-                <img alt="x-link" src={require('../assets/twitter.png')}/>
+                <img
+                    src={require('../assets/github.png')}
+                    alt="github"
+                    style={{maxWidth: '30px', maxHeight: '30px'}}
+                />
             </a>
         </div>
     )

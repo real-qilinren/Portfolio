@@ -20,16 +20,13 @@ const MySkills = () => {
                         visible: {opacity: 1, x: 0},
                     }}
                 >
-
                     <p className="font-playfair font-semibold text-4xl mb-5">
                         MY <span className="text-red">SKILLS</span>
                     </p>
 
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7">
-                        Throughout my university studies and work experiences, I have acquired key programming skills and had the opportunity
-                        to collaborate on numerous projects with individuals from diverse backgrounds.
-                        Additionally, I have honed essential soft skills such as teamwork, time management, and multitasking.
+                        During uni, I’ve learned key skills in programming, and had opportunities to work on many projects with people from diverse backgrounds. I've also developed essential soft skills like teamwork, time management, and multitasking. I'm eager to apply my theoretical knowledge to real-world challenges and I’m well-prepared to kick-start my career. Moreover, I’ve started working on side projects to expand my skill set and stay current in my spare time.
                     </p>
                 </motion.div>
 
@@ -64,7 +61,7 @@ const MySkills = () => {
                     transition={{duration: 0.5}}
                     variants={{
                         hidden: {opacity: 0, y: 50},
-                        visible: {opacity: 1, x: 0},
+                        visible: {opacity: 1, y: 0},
                     }}
                 >
                     <div className="relative h-32">
@@ -76,15 +73,11 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]"/>
                     </div>
                     <p className="mt-5">
-                        - Java/Python/C/JavaScript/HTML/CSS/SQL/R/Swift <br/>
-                        - React/Node.js/Express/SpringBoot <br/>
-                        - Agile/XP/Waterfall methodology<br/>
+                        - Java/Python/C/JS/SQL <br/>
+                        - React/Node.js/Spring Boot <br/>
                         - Git/Jira/GitHub/Bitbucket<br/>
                         - Docker/Jenkins<br/>
                         - MySQL/SQLite/FireStore/MongoDB<br/>
-                        - Data Structures/Algorithms<br/>
-                        - Design Patterns/Principles<br/>
-                        - Understanding of ML/DL <br/>
                     </p>
                 </motion.div>
 
@@ -97,7 +90,7 @@ const MySkills = () => {
                     transition={{delay:0.2, duration: 0.5}}
                     variants={{
                         hidden: {opacity: 0, y: 50},
-                        visible: {opacity: 1, x: 0},
+                        visible: {opacity: 1, y: 0},
                     }}
                 >
                     <div className="relative h-32">
@@ -124,13 +117,13 @@ const MySkills = () => {
                     transition={{delay:0.4, duration: 0.5}}
                     variants={{
                         hidden: {opacity: 0, y: 50},
-                        visible: {opacity: 1, x: 0},
+                        visible: {opacity: 1, y: 0},
                     }}
                 >
                     <div className="relative h-32">
                         <div className="z-10">
                             <p className="font-playfair font-semibold text-5xl">03</p>
-                            <p className="font-playfair font-semibold text-3xl mt-3">Soft Skills</p>
+                            <p className="font-playfair font-semibold text-3xl mt-3">Experience</p>
                         </div>
 
                         <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]"/>
@@ -142,8 +135,7 @@ const MySkills = () => {
                 </motion.div>
             </div>
         </section>
-    )
-
+    );
 }
 
 export default MySkills;

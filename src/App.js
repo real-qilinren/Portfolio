@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 function App() {
     const [selectedPage, setSelectedPage] = useState("home");
     const [isTopOfPage, setIsTopOfPage] = useState(true);
-    const isNonMobile = useMediaQuery("(min-width: 1060px)");
+    const isNonMobile = useMediaQuery("(min-width: 780px)");
 
     useEffect(() => {
         const handleScroll = () => {
