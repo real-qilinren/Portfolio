@@ -26,7 +26,11 @@ const MySkills = () => {
 
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7">
-                        During uni, I’ve learned key skills in programming, and had opportunities to work on many projects with people from diverse backgrounds. I've also developed essential soft skills like teamwork, time management, and multitasking. I'm eager to apply my theoretical knowledge to real-world challenges and I’m well-prepared to kick-start my career. Moreover, I’ve started working on side projects to expand my skill set and stay current in my spare time.
+                        During uni, I’ve learned key skills in programming, and had opportunities to work on many projects with people from diverse backgrounds.
+                        I've also developed essential soft skills like teamwork, time management, and multitasking.
+                        I'm eager to apply my theoretical knowledge to real-world challenges and I’m well-prepared to kick-start my career.
+                        Moreover, I’ve started working on side projects to expand my skill set and stay current in my spare time.
+                        (I'm currently learning .NET and pursuing AWS certification!)
                     </p>
                 </motion.div>
 
@@ -73,9 +77,9 @@ const MySkills = () => {
                         <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]"/>
                     </div>
                     <p className="mt-5">
-                        - Java/Python/C/JS/SQL <br/>
-                        - React/Node.js/Spring Boot <br/>
-                        - Git/Jira/GitHub/Bitbucket<br/>
+                        - Java/Python/C/C#<br/>
+                        - React/Node.js/Spring Boot/.NET <br/>
+                        - Git/CI/CD/Testing<br/>
                         - Docker/Jenkins<br/>
                         - MySQL/SQLite/FireStore/MongoDB<br/>
                     </p>

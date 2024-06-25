@@ -86,8 +86,8 @@ const Projects = () => {
                     </div>
                 </div>
                 <p className="mt-10 mb-10">
-                    Here are some of the projects that I have worked on. Move your mouse cursor on the images to see the details.
-                    More details and the demo video links will be added soon :)
+                    Here are some of the projects that I have worked on.
+                    More projects will be added on soon :)
                 </p>
             </motion.div>
 
