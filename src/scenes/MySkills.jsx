@@ -26,7 +26,7 @@ const MySkills = () => {
 
                     <LineGradient width="w-1/3" />
                     <p className="mt-10 mb-7">
-                        During university, I developed key programming skills and worked on various projects with diverse teams. I honed essential soft skills such as teamwork, time management, and multitasking. I am eager to apply my theoretical knowledge to real-world challenges and kick-start my career. Additionally, I have been working on side projects and am currently learning .NET and pursuing AWS certification to expand my skill set.
+                        Recent Software Engineering graduate with a broad educational background in software development.
                     </p>
                 </motion.div>
 
